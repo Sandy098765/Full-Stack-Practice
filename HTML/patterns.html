@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form validation</title>
+    </head>
+    <body>
+        <h2>User Form</h2>
+        <hr>
+        <form>
+            <!-- OM - Capital letters
+             Sandhya  Title case-- ^[A-Z]{1}[]a-z]${1,50}>--->
+            <label for="un">Name :</label> 
+             <!-- <input type="text" id="un" name="username" pattern="^[A-Z]{2,10}$">  -->
+             <!-- <input type="text" id="un" name="username" pattern="^[A-Z][a-z]{2,10}$" title="First caharecter must be in uppercase" placeholder="Sand.....">  -->
+             <!--title cae-->
+             <input type="text" id="un" name="username" pattern="^[A-Z]{1}[a-z]{2,10}$" title="First character must be uppercase" placeholder="Sandhya">
+              <!-- <input type="text" id="phone" name="phone" pattern="^\d{3}-\d{3}-\d{4}$" title="Format:123-456-7890" required> -->
+             <br>
+             <br>
+
+             <label for="pn">Phone Number :</label>
+             <input type="tel" id="pn" name="pn" pattern="^\+91[6-9]{1}\d{2}-\d{3}-\d{4}$" title="Format: +91-123-456-7890" placeholder="+91-345-678-9876" >
+             <br>
+             <br>
+             <!-- .{8,}-->
+             <label for="pwd">Password:</label>
+             <input type="text" id="pwd" name="Password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$" title="Password must contain at least one uppercase letter, one lowercase letter, and one digit" placeholder="Ga123456" required>
+             <br>
+             <br>
+             <label for="email">Email</label>
+             <input type="email" id="email" name="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address" placeholder="user@example.com">
+             <br>
+             <br>
+            <button type="Submit">Submit</button>
+
+        </form>
+
+        <!--Notes code-->
+         <!-- <form>
+  <label for="firstName">First Name:</label>
+  <input type="text" id="firstName" name="firstName"
+         pattern="^[A-Za-z]{1,50}$"
+         title="First name should only contain letters and must be 1-50 characters long!"
+         required>
+  <input type="submit" value="Submit"> -->
+<!-- </form> -->
+        </body>
+</html>

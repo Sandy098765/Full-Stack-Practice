@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Types of adding JS</title>
+
+        <!--defer - make script wait body is loaded-->
+        <!----Internal js-->
+        <!-- <script defer>
+            function message() {
+                document.writeln("<h1>Welcome to JS</h1>");
+                console.log("Thank you");
+            }
+        </script> -->
+    </head>
+    <body>
+        <h1>Types of addding JS</h1>
+        <button onclick="message()">Click me</button>
+
+        <!---This is the best was to add js i.e in body tag before the ending of body tag-->
+         <!--Internal js-->
+        <!-- <script>
+            function message() {
+                document.writeln("<h1>Welcome to JS</h1>");
+                console.log("Thank you");
+            }
+        </script> -->
+
+        <!--External js-->
+        <!-- <script src="script.js"></script> -->
+         <script>
+            //variables
+
+            // var a=10;
+            // a=20; //re-initialize
+            // a=30; //re-declare
+            // console.log(a);
+
+            // let a=20;
+            // a=30; //re-initialize
+            // let a=40; //re-declare--->Gives error
+            // console.log(a);
+
+            const a=10;
+            // a=30;//re-initialize--->Gives error
+            // const a=40;//re-declare--->Gives error
+            console.log(a);
+
+            //scope -- function
+            // function varvari() {
+            //     var name = "Gamana";
+            //      console.log(name);
+            // }
+            // // console.log(name);-->error
+            // varvari();
+            
+            //scope --let & const (block)
+            // if(true) {
+            //     let z=100;
+            //     const pi = 3.14;
+            //     console.log(z);
+            //     console.log(pi);
+            // }
+            //  console.log(z);--->Gives error
+            // console.log(pi);--->Gives error
+        </script>
+    </body>
+    </html>
+    <!--Internal js-->
+        <!-- <script>
+            function message() {
+                // document.writeln("<h1>Welcome to JS</h1>");
+                // console.log("Thank you");
+               
+            }
+        </script>
+ <script src="script.js"></script> -->
+ 

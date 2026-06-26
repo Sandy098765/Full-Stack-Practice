@@ -1,0 +1,21 @@
+/* 
+.container {
+    background-color: aqua;
+    padding: 10px;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 200px auto; */
+    /* grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 4fr; */
+    /* gap: 10px; */
+    /* row-gap: 30px;
+    column-gap: 20px; */
+    /* gap: 20px 30px;
+} */
+
+/* .container div {
+    background-color: blueviolet;
+    border: 2px solid black;
+    padding: 30px;
+    font-size: 30px;
+    text-align: center;
+} */ 

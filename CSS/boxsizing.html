@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Box Sizing in CSS</title>
+        <style>
+            *{
+                margin: 0px;
+            }
+            h1 {
+                text-shadow: 10px 5px 5px aqua;
+            }
+            .nb {
+                width: 100px;
+                height: 100px;
+                background-color: aquamarine;
+                /* by default, box-sizing is set to content-box */
+                padding: 10px;
+                border: 5px solid red;
+                margin: 10px;
+                border-radius: 30px;
+            }
+            .cb {
+                width: 100px;
+                height: 100px;
+                background-color: aquamarine;
+                /* when box-sizing is set to content-box, then the padding is added to t,b,r,l so the box looks bigger then the original size */
+                box-sizing: content-box;
+                padding: 10px;
+                border: 5px solid red;
+                margin: 10px;
+            }
+            .bb {
+                width: 100px;
+                height: 100px;
+                background-color: aquamarine;
+                /* when box-sizing is set to border-box, then the ppadding is not added like the content-box and remain same size */
+                box-sizing: border-box;
+                padding: 10px;
+                border: 5px solid red;
+                margin: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Box sizing</h1>
+        <div class="nb">Normal Box</div>
+        <div class="cb">Content Box</div>
+        <div class="bb">Border Box</div>
+    </body>
+    </html>
